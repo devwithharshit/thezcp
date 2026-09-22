@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shop — The Zero Credit Project</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site-header"><nav class="nav-left"><a href="collections.html">SHOP</a><a href="contact.html">CONTACT</a></nav><a class="logo" href="index.html"><img src="assets/logo.jpg" alt="The Zero Credit Project"></a><nav class="nav-right"><button onclick="openSearch()">⌕</button><a href="contact.html">♙</a><button onclick="toggleCart()">♧<span id="cart-count">0</span></button></nav></header>
+<main class="shop-page"><div class="shop-title"><div class="mini-label">NO CREDIT CLUB</div><h1>SHOP THE DROP</h1><p>Quiet streetwear. Clean designs. Made to order.</p></div><div class="grid">
+<a class="card" href="product.html?id=after-hours"><div><img src="assets/product-after-hours.png" alt="After Hours Oversized Tee"></div><span>After Hours Oversized Tee</span><b>₹1,199</b></a>
+<a class="card" href="product.html?id=night-shift"><div><img src="assets/product-late-night.png" alt="Night Shift Tee"></div><span>Night Shift Tee</span><b>₹1,199</b></a>
+<a class="card" href="product.html?id=hoodie"><div><img src="assets/product-hoodie.png" alt="TZCP Heavy Hoodie"></div><span>TZCP Heavy Hoodie</span><b>₹2,499</b></a>
+<a class="card" href="product.html?id=crewneck"><div><img src="assets/product-crewneck.png" alt="TZCP Crewneck"></div><span>TZCP Crewneck</span><b>₹1,899</b></a>
+</div></main>
+<footer class="site-footer light"><div class="newsletter"><div><h2>Join The Zero Credit Project!</h2><p>Quiet drops. Early access. No noise.</p></div><form onsubmit="subscribe(event)"><input type="email" required placeholder="Email address"><button>→</button></form></div><div class="footer-bottom"><span>© 2026 The Zero Credit Project, Powered by Shopify</span><a href="#">Terms and Policies</a></div></footer>
+<div class="search-overlay" id="search-overlay" onclick="closeSearch(event)"><div class="search-modal" onclick="event.stopPropagation()"><button class="x" onclick="closeSearch()">×</button><div class="mini-label">SEARCH</div><input id="search-input" type="search" placeholder="Search"></div></div><aside class="cart" id="cart"><div class="cart-head"><span>CART</span><button onclick="toggleCart()">×</button></div><div id="cart-items" class="cart-items"><p>Your cart is empty.</p></div><a href="collections.html" class="cart-link">SHOP THE COLLECTION</a></aside><script src="script.js"></script></body></html>

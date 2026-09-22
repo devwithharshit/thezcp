@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Zero Credit Project</title>
+  <meta name="description" content="The Zero Credit Project — quiet streetwear. No unnecessary noise.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-page">
+  <header class="site-header">
+    <nav class="nav-left"><a href="collections.html">SHOP</a><a href="contact.html">CONTACT</a></nav>
+    <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="The Zero Credit Project"></a>
+    <nav class="nav-right"><button aria-label="Search" onclick="openSearch()">⌕</button><a href="contact.html" aria-label="Account">♙</a><button aria-label="Cart" onclick="toggleCart()">♧<span id="cart-count">0</span></button></nav>
+  </header>
+
+  <main>
+    <section class="hero-strip" aria-label="The Zero Credit Project">
+      <div class="panels">
+        <a class="panel" href="collections.html"><img src="assets/panel1.jpg" alt="TZCP No Credit Club"></a>
+        <a class="panel" href="collections.html"><img src="assets/panel2.jpg" alt="Built on simplicity"></a>
+        <a class="panel" href="collections.html"><img src="assets/panel3.jpg" alt="Made for connection"></a>
+        <a class="panel" href="collections.html"><img src="assets/panel4.jpg" alt="Made to order"></a>
+        <a class="panel" href="collections.html"><img src="assets/panel5.jpg" alt="Who move differently"></a>
+      </div>
+      <div class="dots" aria-hidden="true"><span class="active"></span><span></span><span></span><span></span><span></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="newsletter">
+      <div><h2>Join The Zero Credit Project!</h2><p>Quiet drops. Early access. No noise.</p></div>
+      <form onsubmit="subscribe(event)"><input type="email" required placeholder="Email address"><button aria-label="Submit">→</button></form>
+    </div>
+    <div class="footer-bottom"><span>© 2026 The Zero Credit Project, Powered by Shopify</span><a href="#">Terms and Policies</a></div>
+  </footer>
+
+  <div class="search-overlay" id="search-overlay" onclick="closeSearch(event)"><div class="search-modal" onclick="event.stopPropagation()"><button class="x" onclick="closeSearch()">×</button><div class="mini-label">SEARCH</div><input id="search-input" type="search" placeholder="Search"></div></div>
+  <aside class="cart" id="cart"><div class="cart-head"><span>CART</span><button onclick="toggleCart()">×</button></div><div id="cart-items" class="cart-items"><p>Your cart is empty.</p></div><a href="collections.html" class="cart-link">SHOP THE COLLECTION</a></aside>
+  <script src="script.js"></script>
+</body>
+</html>
